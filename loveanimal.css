@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#fff;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    box-shadow: 1px 1px 8px #0b0b0b76;
+    padding:0.5rem;
+    position:sticky;
+    top:0;
+    z-index:99;
+}
+
+#nav-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+#logo{
+    margin:20px;
+    color:#f5f5f5;
+    font-size:2rem;
+}
+
+.links{
+    display:flex;
+}
+
+a{
+    text-decoration:none;
+    list-style:none;
+    font-weight:600;
+    color:#f5f5f5;
+    margin:20px;
+    scroll-behavior: smooth;
+}
+
+a:active{
+    color:#fff;
+    transform:scale(0.8);
+}
+
+.img-intro{
+    width:100%;
+    filter:drop-shadow(2px 2px 2px rgb(127, 127, 127));
+}
+
+#intro{
+    display:flex;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    width:100%;
+}
+
+h1{
+    font-size:10rem;
+    filter:drop-shadow(2px 2px 2px rgb(127, 127, 127));
+    border-bottom:8px solid rgb(40, 5, 238, 0.86);
+    width:50%;
+    border-radius:2px;
+}
+
+.legenda{
+    font-size:2rem;
+    margin:35px;
+}
+
+#sobre, #contatos, #doacao{
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     padding:1rem;
+}
+
+.titulo{
+    font-size:2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:6rem;
+    color:#f5f5f5;
+}
+
+h3{
+     background-color: rgb(40, 5, 238, 0.86);
+     border-radius:0px 40px 0px;
+     padding:1rem;
+     box-shadow: 13px 12px 27px -22px rgba(0,0,0,0.54);
+}
+
+.apresentacao{
+    border:2px solid #1212BF;
+    border-radius:4px;
+    box-shadow:1px 1px 2px  rgb(127, 127, 127);
+    font-size:1.5rem;
+    margin:4rem;
+    padding:2.5rem;
+}
+
+mark{
+    background-color:#1212BF;
+    color:#f5f5f5;
+    border-radius:8px;
+    box-shadow:1px 1px 2px  rgb(127, 127, 127);
+}
+
+
+#cards{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2.5rem;
+
+}
+
+.perfils{
+    background: linear-gradient( rgba(255,255,255,1) 50%, rgba(22,181,213,1) 100%);
+    width:35%;
+    box-shadow: 13px 12px 27px -22px rgba(0,0,0,0.54);
+    border-radius:5px;
+    
+}
+
+
+.ilustracao{
+    width:100%;
+    clip-path:circle();
+    object-fit:center;
+}
+
+.perfils{
+   color: #f5f5f5;
+   padding:1rem;
+   cursor:pointer;
+}
+
+.contato-info{
+    overflow:hidden;
+    height:0;
+    transition:all .5s;
+}
+
+.perfils:hover .contato-info{
+    height:100px;
+    padding:1rem;
+    overflow:visible;
+}
+
+#card-doacao{
+    margin: 8rem;
+}
+
+.valor,.finalizar{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+
+input{
+    all:unset;
+}
+
+.valor{
+    border: 2px solid #1212BF;
+    border-radius:4px;
+}
+
+#logo-valor{
+    font-size:8rem;
+    margin:1.5rem;
+    color:#d4d4d433;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+button{
+    border:none;
+    background-color:#07b44c;
+    border-radius:2px;
+    width:100px;
+    padding:0.5rem;
+    margin:1rem;
+    color:#f5f5f5;
+    cursor: pointer;
+    transition:all .5s;
+}
+
+button:active{
+    transform:scale(0.98);
+    background-color:#04973f;
+}
